@@ -1,0 +1,178 @@
+.photoModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.photoModalContent {
+  position: relative;
+  max-width: 90%;
+}
+
+.photoModalContent img {
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.closeButton {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background: var(--pink-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+  background: var(--pink-hover);
+}
+
+.photoActions .btn {
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.itemModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.itemModalContent {
+  position: relative;
+  padding: 2em;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+  max-width: 80vw;
+  max-height: 30vw;
+  font-size: 14px;
+}
+
+.modalCard {
+  box-shadow: none !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+}
+
+.modalClose {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background: var(--pink-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.modalClose:hover {
+  background: var(--pink-hover);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.itemModalContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.itemModalContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.itemModalContent::-webkit-scrollbar-thumb {
+  background: var(--pink-secondary);
+  border-radius: 3px;
+}
+
+.itemModalContent::-webkit-scrollbar-thumb:hover {
+  background: var(--pink-primary);
+}
+
+@media (max-width: 768px) {
+  .itemModalContent {
+    width: 95%;
+    margin: 10px;
+  }
+
+  .modalClose {
+    top: 10px;
+    right: 10px;
+    background: rgba(219, 112, 147, 0.9);
+  }
+}
+
+.btnShowmore {
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ef8ca5;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.commentsForm textarea.formInput {
+  min-height: 80px;
+  resize: vertical;
+}
