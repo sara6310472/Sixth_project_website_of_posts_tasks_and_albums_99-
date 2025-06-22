@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a comprehensive web application that allows users to create, manage, and organize posts, tasks, and photo albums. It offers functionalities such as adding new content, editing existing items, and categorizing data for better user experience. The website is designed with a clean, intuitive interface and supports smooth navigation across different sections. This project demonstrates proficiency in full-stack development, including frontend design, backend logic, and database management.
